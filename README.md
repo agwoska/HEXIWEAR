@@ -27,10 +27,8 @@ Code will otherwise not compile correctly.
 Use SW/MK64_KDS to get started. ___This is where the problem is___
 
 _pyOCD_ is contained in SW with a Python 2.7 installer. _pyocd-gdbserver.exe_ should 
-be copied to the root of the 
+be copied to the root of the
 [_KDS_](https://www.nxp.com/design/designs/design-studio-integrated-development-environment-ide:KDS_IDE).
-
-*[KDS]: Kinetis Degign Studio
 
 ---
 
