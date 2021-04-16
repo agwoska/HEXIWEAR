@@ -30,6 +30,14 @@ _pyOCD_ is contained in SW with a Python 2.7 installer. _pyocd-gdbserver.exe_ sh
 be copied to the root of the
 [_KDS_](https://www.nxp.com/design/designs/design-studio-integrated-development-environment-ide:KDS_IDE).
 
+It may be more convenient to just use Mbed OS from ARM. Note that the examples
+use Mbed OS 5. The examples will otherwise not work entirely correct due to 
+deprecated functions. For example:
+> `Thread::wait(1000)` has been [deprecated](https://os.mbed.com/docs/mbed-os/v5.15/apis/thisthread.html),
+> use `ThisThread::sleep_for(1000)` instead
+
+
+
 ---
 
 Important Links
@@ -38,3 +46,4 @@ Important Links
  * [Hexiwear Manual](https://www.mikroe.com/blog/hexiwear-user-manual)
  * [Cloud Platform](https://demo.wolkabout.com)
  * [GNU ARM Eclipse](https://osdn.net/projects/sfnet_gnuarmeclipse/downloads/Current%20Releases/3.x/ilg.gnuarmeclipse.repository-3.2.1-201701141320.zip/)
+ * [ARM Mbed](https://os.mbed.com/platforms/Hexiwear/)
